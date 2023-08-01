@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="images/style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="hero">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#hero">HOME</a> </li>
+            <li><a href="#about">ABOUT US</a> </li>
+            <li><a href="#services">SERVICES</a> </li>
+            <li><a href="#">TECH EVENTS</a> </li>
+            <li><a href="#contact">CONTACT US</a> </li>
+            <i class="far fa-window-close" onclick="closemenu()"></i>
+        </ul>
+        <i class="far fa-caret-square-down" onclick="openmenu()"></i>
+    </nav>
+    <div class="detel">
+        <h4>FULLSTACK DEVELOPER</h4>
+        <h1>I'm <span>Abu Thahir</span></h1>
+        <p>This my Official Portfolio website to show all
+        <br>Details and work Experiance full stack development
+        </p>
+        <a id="d1" href="images/abu.pdf" download ><i class="fas fa-download"></i>DOWNLOAD CV</a>
+    </div>
+        <div class="images">
+            <img src="images/abuuuuuuuuuu.jpg" class="boy">
+
+        </div>
+
+</div>
+<!--//....................................................ABOUTME......................//-->
+
+<div id="about">
+    <div class="contain">
+        <div class="row">
+            <div class="about1">
+                <img src="images/abuex.jpg" class="about w-100" alt="...">
+            </div>
+            <div class="about2">
+
+
+
+                <h1 class="subtitle"><center>ABOUT-ME</center> </h1>
+                <p>I am a fresher who complete diploma in computer engineering and done an internship program in
+                Soften Technologies in python full stack development . Seeking an opportunity to develop my skill
+                and Knowledge which i learn by giving my best contribution to the company with full potential and where
+                i can upgrade my skills and knowledge</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                    <p class="tab-links" onclick="opentab('project')">PROJECT</p>
+                    <p class="tab-links" onclick="opentab('education')">EDUCATION</P>
+
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>LANGUAGES</span><br>Python,JavaScript,HTML,CSS</li>
+                        <li><span>FRAMEWORK</span><br>Django,Pyramid,Flask,Rest</li>
+                        <li><span>DATABASE</span><br>PostgreSQL,SQLite</li>
+                        <li><span>DevTool</span><br>Pycharm,VisualStudio,GitHub</li>
+                    </ul>
+                </div>
+
+                <div class="tab-content" id="project">
+                    <ul>
+                        <li><span>SMART DOORBELL-HOME SYSTEM</span><br>smart doorbell home system is an internet connected doorbell. <br>used mainly to notify the owner when a visitor arrives at the door. <br> occurs in the smartphone of the smart home owner</li>
+
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>DIPLOMA IN COMPUTER ENGINEERING</span><br>st.mary,s polytechnic college <br>2022</li>
+                        <li><span>HIGHER SECONDARY-COMPUTER APPLICATION</span><br>GHSS THOLANNUR [2017-2019]</li>
+                        <li><span>HIGH SCHOOL</span><br>S.M.M.H.S.S Pazhambalacode <br>2016</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--...............service..........................-->
+<div id="services">
+    <div class="container"><center>
+        <h1 class="sub-title">SERVICES</h1></center>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>FullStack Development</h2>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-duotone fa-tractor"></i>
+                <h2>Responsive Web Designing</h2>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-highlighter"></i>
+                <h2>website management</h2>
+                    <a href="#">learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--..............................events..................-->
+<div>
+
+</div>
+<!--........................Contact.....................-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <center>
+                <h1 class="sub-title">CONTACT-ME</h1>
+                </center>
+                <p><i class="fas fa-paper-plane"></i>abuthahir9157@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i>7592939157</p>
+                <div class="social-icon">
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.instagram.com/abu______thahir/"><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-discord"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form class="contact-right">
+                    <input type="text" name="Name" placeholder="YourName" required>
+                    <input type="email" name="email" placeholder="YourEmail" required>
+                    <textarea name="Message" rows="6" placeholder="YourMessage"></textarea>
+                    <button type="submit" class="btn btn2">SUBMIT</button>
+
+                </form>
+            </div>
+        </div>
+<!--        <div>-->
+<!--            <img src="{% static 'images/contact.jpg' %}" class="contact">-->
+<!--        </div>-->
+
+
+        <div class="copyright">
+        <p>copyright ©Made with <i class="fas fa-hand-holding-heart"></i> by AbuThahir</p>
+
+</div>
+    </div>
+
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontent){
+            tabcontents.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,350 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'poppins',sans-serif;
+    box-sizing:border-box;
+}
+body{
+
+margin-left:8%;
+background:black;
+
+
+
+}
+.logo{
+width:3cm;
+height:1cm;
+
+}
+#hero{
+
+    width:100%;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+}
+.images{
+width:45%;
+height:80%;
+position:absolute;
+bottom:0;
+right:100px;
+}
+.images img{
+height:109%;
+position:relative;
+left:70%;
+bottom:-233px;
+transform:translateY(-50%);
+transition:bottom 1s, left 1s;
+}
+.images:hover .boy{
+    left:45%;
+}
+
+nav{
+    display:flex;
+    width:84%;
+    margin:auto;
+    padding:20px 0;
+    align-items:center;
+    justify-content:space-between;
+}
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin:10px 20px;
+}
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:bold;
+    position:relative;
+}
+nav ul li a::after{
+    content: '';
+    width:0;
+    height:2px;
+    background:#C8C1C1 ;
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    transition:0.5s;
+
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.detel{
+
+    margin-top:15%;
+
+}
+
+
+
+.detel h4{
+font-size:20px;
+color:#6F6B6B  ;
+margin-bottom:20px;
+}
+.detel h1{
+font-size:50px;
+color:white;
+margin-bottom:20px;
+}
+.detel h1 span{
+color:red;
+
+}
+
+.detel p{
+color:white;
+line-height:22px;
+}
+#d1{
+color:black;
+}
+
+.detel a{
+background:white;
+padding:10px 18px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+display:inline-block;
+margin:30px 0;
+border-radius:15px 50px;
+
+}
+
+
+
+
+#about{
+padding:80px 0;
+color:white;
+
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+flex-wrap:wrap;
+}
+.about1{
+flex-basis:40%;
+
+}
+.about1 img{
+width:50%;
+left:
+height:
+position:absolute;
+border-radius:30px;
+bottom:0px;
+}
+.about2{
+flex-basis:60%
+}
+.subtitle{
+font-size:40px;
+font-weight:600;
+color:#497A7A ;
+}
+
+.tab-titles{
+    display:flex;
+    margin:20px 0 40px;
+}
+
+.tab-links{
+    margin-right:50px;
+    font-size:20px;
+    font-weight:50px;
+    cursor:pointer;
+    position:relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:white;
+    position:absolute;
+    left:0;
+    bottom:-8px;
+    transition:0.5s;
+}
+.tab-links.active-link::after{
+    width:100%;
+}
+.tab-content ul li{
+list-style:none;
+margin:10px 0;
+}
+.tab-content ul li span{
+color:#5F6161 ;
+font-size:18px;
+}
+.tab-content{
+display:none;
+}
+.tab-content.active-tab{
+display:block;
+}
+
+
+
+#services{
+padding: 30px 0;
+margin-right:8%;
+
+}
+.services-list{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-gap:40px;
+margin-top:50px;
+
+}
+.services-list div{
+    background:#262626;  ;
+    padding:40px;
+    font-size:13px;
+    font-weight:300;
+    border-radius:40px;
+    transition:background 0.5s, transform 0.5s;
+}
+.services-list div i{
+font-size:50px;
+margin-bottom:30px;
+}
+.sub-title{
+color:white;
+}
+.services-list div h2{
+font-size:30px;
+font-weight:500;
+margin-bottom:15px;
+}
+.services-list div a{
+text-decoration:none;
+color:#fff;
+font-size:12px;
+margin-top:20px;
+display:inline-block;
+}
+
+.services-list div:hover{
+    background:#ff004f;
+    transform:translateY(-20px);
+
+}
+.even{
+boarder-radius:10px;
+position:relative;
+overflow:hidden;
+width:50%;
+height:50%;
+}
+.even img{
+width:50%;
+height:50%;
+boarder:102px;
+display:block;
+}
+
+...................contact............
+.contact-left{
+flex-basis:60%;
+}
+.contact-right{
+flex-basis:70%;
+}
+.contact-left p{
+color:white;
+margin-top:15px;
+
+}
+.contact-left p i{
+color:red;
+margin-right:15px;
+margin-top:30px;
+font-size:25;
+
+
+}
+.social-icon a{
+text-decoration:30px;
+font-size:30px;
+margin-right:15px;
+margin-top:30px;
+color:#ababab;
+display:inline-block;
+transition:transform;
+}
+.social-icon a:hover{
+color:#ff004f;
+transform:translateY(-5px);
+
+}
+.btn.btn2{
+background:red;
+padding:10px 18px;
+text-decoration:none;
+font-weight:bold;
+color:white;
+display:inline-block;
+margin:30px 0;
+border-radius: 15px 50px;
+}
+.contact-right form{
+width:80%;
+
+}
+form input, form textarea{
+ width:100%;
+ boarder:0;
+ outline:none;
+ background:#262626;
+ padding:15px;
+ margin:15px 0;
+ color:#fff;
+ font-size:18px;
+ boarder-radius:15px 50px 30px;
+}
+.contact img{
+width:45%;
+height:80%;
+position:absolute;
+bottom:0;
+right:100px;
+
+}
+.copyright{
+    width:87%;
+    text-align:center;
+    padding:25px 0;
+    background:#262626;
+    font-weight:300;
+    margin-top20px;
+    color:white;
+
+}
+.copyright i{
+color:#ff004f;
+}
+
+/*.....................css for small screen....................*/
+@media only screen and(max-width:600px){
+#hero{
+background-image:url(images/abuuuuuuuuuu.jpg);
+}
+#sidemenu{
+margin-top:100%;
+font-size:16px;
+}
+
+
+}
